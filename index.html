@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jose Tudon — Assistant Professor, ITAM</title>
+  <meta name="description" content="Jose Tudon is an Assistant Professor at ITAM Business School. Research in empirical industrial organization, applied micro, and applied theory.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon (simple green circle as inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JT</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-name">Jose Tudon</a>
+      <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#research">Research</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://www.dropbox.com/scl/fi/91c6y0rz20531xjnlt5kp/CV_JoseTudon.pdf?rlkey=doyjut5jyf7ixormi2hmzsjv6&dl=0" target="_blank">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Jose Tudon</h1>
+        <p class="subtitle">
+          Assistant Professor at <a href="https://www.itam.mx" target="_blank">ITAM Business School</a> in Mexico City.<br>
+          I study <span class="fields">empirical industrial organization</span>, <span class="fields">applied micro</span>, and <span class="fields">applied theory</span>.
+        </p>
+        <div class="hero-links">
+          <a href="https://www.dropbox.com/scl/fi/91c6y0rz20531xjnlt5kp/CV_JoseTudon.pdf?rlkey=doyjut5jyf7ixormi2hmzsjv6&dl=0" class="btn-cv" target="_blank">Curriculum Vitae</a>
+          <a href="mailto:jtudon@itam.mx">jtudon@itam.mx</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="images/photo.jpg" alt="Jose Tudon">
+      </div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section id="research">
+    <div class="section-inner">
+      <h2 class="section-title">Research</h2>
+
+      <!-- Working Papers -->
+      <div class="research-group">
+        <h3>Working Papers</h3>
+
+        <div class="paper">
+          <div class="paper-title"><a href="https://www.dropbox.com/scl/fi/p2cccxjdf1zw59vbj15m8/cataracts_gutierrez_rubli_tudon.pdf?raw=1" target="_blank">Eye-Opening Products: Uncertainty and Surprise in Cataract Surgery Outcomes</a></div>
+          <div class="paper-info">
+            with Emilio Gutierrez and Adrian Rubli &middot;
+            <span class="status">Revise & Resubmit, Review of Economics and Statistics</span>
+          </div>
+          <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '− Hide abstract' : '+ Abstract'">+ Abstract</button>
+          <div class="paper-abstract">
+            For experience goods, benefits from consumption are ex-ante unknown but revealed after repeated interactions. This uncertainty might lead to under-consumption. We use data from a large cataract surgery provider in Mexico City to estimate demand, given uncertainty in surgical outcomes. We consider forward-looking consumers with a surgery demand per eye and information revealed after the first surgery. We exploit data from sales agents to identify structural demand parameters; namely, price elasticities and the value of the uncertain shock. We simulate counterfactual policies, showing that budget-neutral price changes are more effective at increasing welfare than persuasive advertising.
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-title"><a href="https://www.dropbox.com/scl/fi/7kv5i93zs2mbfivp271l0/hidden_underdog_effect_tudon.pdf?raw=1" target="_blank">The Hidden Advantage: How Concealing Competitive Status Boosts Underdog Performance</a></div>
+          <div class="paper-info">
+            <span class="status">Revise & Resubmit, Review of Economics and Statistics</span>
+          </div>
+          <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '− Hide abstract' : '+ Abstract'">+ Abstract</button>
+          <div class="paper-abstract">
+            This study explores how awareness of underdog or favorite status impacts performance in competitive settings. Prior theory suggests identifying as an &lsquo;underdog&rsquo; may reduce effort if success seems unattainable, but empirical evidence remains limited to surveys and laboratory settings. Using high-stakes esports tournaments as a real-world testing ground, I find underdogs perform significantly better when unaware of their status, increasing their winning probability by 58% in close matches and boosting earnings by 10%. Conversely, favorites underperform with hidden statuses. Rational effort reduction acts as first-order mediator; pressure is second-order. Results imply strategic information management might improve productivity in competitive environments.
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-title"><a href="https://www.dropbox.com/scl/fi/ytbv5shpprju9lw9yq3rm/kantar_promotions_jun2024.pdf?raw=1" target="_blank">Promotions Measured with Error in Retail Markets: Implications for Firm Behavior and Health Policy</a></div>
+          <div class="paper-info">with Emilio Gutierrez and Adrian Rubli</div>
+          <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '− Hide abstract' : '+ Abstract'">+ Abstract</button>
+          <div class="paper-abstract">
+            The estimation of promotional effects often relies on inferring discounts from price dips. This paper leverages data with observable promotional discounts from purchase receipts to estimate price and promotion elasticities, contrasting estimates between directly recorded promotions and the traditional inferred promotions approach. Utilizing nationwide retail data for Mexico and allowing for flexible demand curves, we estimate these elasticities across many consumer goods. First, we estimate that promotions, as recorded in the data, increase demand by 20–33%, even after accounting for price effects. This points to non-price attributes of promotions, such as salience. Second, we find that an established algorithm for inferring promotions tends to over-predict price discounts relative to direct measures; estimations based on algorithm-defined promotions underestimate discount effects and overestimate price elasticities, highlighting the drawbacks of this common methodology. Finally, we relate our findings to managerial implications by focusing on product healthiness. Our results show that healthy and unhealthy products have similar promotion effects. Linking this to public health policy, we demonstrate that, after a tax on sugar-sweetened beverages, firms use fewer promotions on affected products. Overall, we emphasize the importance of directly observing promotional information.
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-title"><a href="https://www.dropbox.com/scl/fi/dg1dtdwku3d9x6c3xnuef/draft_referrals_jun24.pdf?raw=1" target="_blank">Referral Reward Programs and Customer Acquisition</a></div>
+          <div class="paper-info">with Adrian Rubli</div>
+          <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '− Hide abstract' : '+ Abstract'">+ Abstract</button>
+          <div class="paper-abstract">
+            Referral reward programs are widely recognized as a cost-effective strategy for customer acquisition, leveraging the power of word-of-mouth and user incentives. However, key elements such as incentive size, recipient identity, and their influence on the composition of new customers are crucial for understanding the effectiveness of these programs and remain largely unexplored in empirical research. We evaluate the impact of a referral reward program on customer acquisition for a fintech banking platform in Mexico. Through a series of consecutive experimental interventions, we find that referral incentives significantly boost referral likelihood by a factor of 2, with users responding twice as strongly to rewards for themselves than their referred peers. However, previously incentivized users demonstrate a third of the propensity to make further referrals, although previous referrers (i.e., compliers) have a higher likelihood to further refer and should then be targeted by the firm. Additionally, referred users from incentivized customers show lower app engagement during their first year. These findings indicate diminishing returns for referral marketing, how incentive design and targeting matter, and suggest a potential trade-off between customer acquisition and user quality.
+          </div>
+        </div>
+      </div>
+
+      <!-- Pre-PhD -->
+      <div class="research-group">
+        <h3>Pre-PhD</h3>
+
+        <div class="paper">
+          <div class="paper-title"><a href="http://arxiv.org/abs/1807.09626" target="_blank">A Memo on the Proof-of-Stake Mechanism</a></div>
+          <div class="paper-info">with George Gui and Ali Hortaçsu</div>
+        </div>
+      </div>
+
+      <!-- Published -->
+      <div class="research-group">
+        <h3>Published</h3>
+
+        <div class="paper">
+          <div class="paper-title"><a href="https://www.dropbox.com/s/oydmg6hoel7z0ps/Tudon%202022%20QME.pdf?raw=1" target="_blank">Distilling Network Effects from Steam</a></div>
+          <div class="paper-info">
+            <em>Quantitative Marketing and Economics</em>, Volume 53, 328–355, 2022 &middot;
+            <a href="https://www.dropbox.com/s/6y1qir4dx6sw2xe/Replication_files_steam.zip?raw=1">Replication files</a>
+          </div>
+          <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '− Hide abstract' : '+ Abstract'">+ Abstract</button>
+          <div class="paper-abstract">
+            This paper develops a method to estimate the demand of network goods, using minimal network data, but leveraging within-consumer variation. I estimate demand for video games as a function of individuals' social networks, prices, and qualities, using data from Steam, the largest video game digital distributor in the world. I separately identify price elasticities on individuals with and without friends with the same game, conditional on individual fixed effects and games' characteristics. I then use the discrepancies between estimated price elasticities to identify the impact of social networks. I compare my method to &lsquo;traditional-IV&rsquo; strategies in the literature, which require detailed network data, and find similar results. A 1% increase in friends' demands increases demand by 0.3%. These results suggest firms have incentives to employ &lsquo;influencers,&rsquo; and to merge their gaming networks. I evaluate counterfactual game mergers, and find network effects must be considered to sign consumer welfare changes.
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-title"><a href="https://www.dropbox.com/s/93nxi03xa8zx4gt/Tudon%202022%20Rand.pdf?raw=1" target="_blank">Prioritization vs. Neutrality on Platforms: Evidence from Amazon's Twitch.tv</a></div>
+          <div class="paper-info">
+            <em>The RAND Journal of Economics</em>, Volume 20, 293–312, 2022 &middot;
+            In the media: <a href="https://www.bloomberg.com/view/articles/2017-11-21/the-end-of-net-neutrality-isn-t-the-end-of-the-world" target="_blank">bloomberg.com</a>
+          </div>
+          <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '− Hide abstract' : '+ Abstract'">+ Abstract</button>
+          <div class="paper-abstract">
+            This paper studies the trade-off between entry and congestion in Amazon's Twitch.tv, which prioritizes popular content using a fast lane. I specify and estimate supply and demand models for live video, and a congestion model. Using technological shocks, I identify congestion costs for content providers and their consumers. Using shocks in prioritization, I identify its benefits. With estimated preferences and technological parameters, I construct counterfactuals. Without congestion, demand potentially doubles. A supply-side Pigouvian tax is preferred to a demand-side one. Without prioritization, consumer welfare drops up to 10%. I consider a rent-extractive platform, and discuss parallels with net-neutrality policy.
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-title"><a href="https://www.dropbox.com/s/jbpnkklj6xuk71e/Tudon%202021%20Econ%20Theory%20Bull.pdf?raw=1" target="_blank">Can Price Dispersion Be Supported Solely by Information Frictions?</a></div>
+          <div class="paper-info">
+            <em>Economic Theory Bulletin</em>, Volume 9, 75–90, 2021 &middot;
+            <a href="https://www.dropbox.com/sh/24q43ldn7lo1bqz/AABdaojwvPIoS0NAvDchs0pja?raw=1">Matlab codes</a>
+          </div>
+          <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '− Hide abstract' : '+ Abstract'">+ Abstract</button>
+          <div class="paper-abstract">
+            Even with identical consumers and identical firms, if firms set prices in a first stage, and if consumers search sequentially in a second stage, price dispersion arises in the form of a mixed-strategy Nash equilibrium. One only needs to assume consumers know the realized price distribution and that they do not know which firm has what price. In contrast to Burdett and Judd (1983), price quotes are not required to be &lsquo;noisy.&rsquo; Moreover, actual search is predicted to be nontrivial.
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-title"><a href="https://www.dropbox.com/s/oo02kle039l79ih/tud%C3%B3n%202019%20econ%20theory%20bull.pdf?raw=1" target="_blank">Perception, Utility and Evolution</a></div>
+          <div class="paper-info">
+            <em>Economic Theory Bulletin</em>, Volume 7, 191–208, 2019 &middot;
+            <a href="https://www.dropbox.com/s/97lo5ntaz26micb/PerceptionMatlabFiles.zip?raw=1">Matlab codes</a>
+          </div>
+          <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '− Hide abstract' : '+ Abstract'">+ Abstract</button>
+          <div class="paper-abstract">
+            This paper presents a model of the evolution of the hedonic utility function in which perception is imperfect. Netzer (2009) considers a model with perfect perception and finds that the optimal utility function allocates marginal utility where decisions are made frequently. This paper shows that it is also beneficial to allocate marginal utility away from more perceptible events. The introduction of perceptual errors can lead to qualitatively different utility functions, such as discontinuous functions with flat regions rather than continuous and strictly increasing functions.
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-title"><a href="https://www.dropbox.com/s/omjqkw0lwl1nsj7/Tudon_2015_EconLetters.pdf?raw=1" target="_blank">Pay-What-You-Want: Because I Do Not Know How Much to Charge You</a></div>
+          <div class="paper-info">
+            <em>Economics Letters</em>, Volume 137, 41–44, 2015
+          </div>
+          <button class="abstract-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? '− Hide abstract' : '+ Abstract'">+ Abstract</button>
+          <div class="paper-abstract">
+            With any positive fraction of altruistic consumers in the population who give away any positive fraction of their gains from trade, there exists a high enough level of uncertainty about demand such that the monopolist prefers pay-what-you-want over the traditional monopoly or any other pricing mechanism. Low marginal costs facilitate the adoption of pay-what-you-want. Consumer welfare always increases with pay-what-you-want.
+          </div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-title"><a href="https://www.dropbox.com/s/orm8zodf270r286/Growe%2C%20DeBruine%2C%20Lee%20and%20Tudon%202014.pdf?raw=1" target="_blank">The Profitability and Performance of U.S. Regional Banks Using the Predictive Focus of the &laquo;Fundamental Analysis Research&raquo;</a></div>
+          <div class="paper-info">
+            with Glenn Growe, Marinus DeBruine, and John Y. Lee &middot;
+            <em>Advances in Management Accounting</em>, Volume 24, 191–239, 2014
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching -->
+  <section id="teaching">
+    <div class="section-inner">
+      <h2 class="section-title">Teaching</h2>
+
+      <div class="course">
+        <div class="course-name">Business Data Driven Decision-Making</div>
+        <div class="course-detail">
+          ITAM Business School &middot;
+          <a href="https://www.dropbox.com/scl/fi/c0doxdvcnclk46fh8n5us/slides_readings_and_data_lists.pdf?rlkey=hrtgbkvyzodqh3fav1xc86m03&dl=0" target="_blank">Slides, readings & data</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-inner">
+      <h2 class="section-title">About</h2>
+
+      <div class="about-content">
+        <p>
+          I did my PhD in the dismal science at the University of Chicago.
+          I was born in Cd. Madero, Tamaulipas, Mexico. My last name is &laquo;<a href="https://en.wikipedia.org/wiki/Spanish_naming_customs" target="_blank">Tud&oacute;n Maldonado</a>&raquo;.
+          Before becoming a worldly philosopher, I studied Economics and Applied Mathematics at ITAM in Mexico city, where I met my wife.
+          We now have three daughters: one born in 2018, the second in 2020, and the third in 2023.
+        </p>
+        <p>
+          I enjoy cooking, soccer and playing almost any game, from chess to cosmic encounter.
+          (Basketball is a notable exception; I think that the marginal point is worth very little, but feel free to share your opinion!).
+        </p>
+      </div>
+
+      <!-- Bad jokes -->
+      <div class="fun-section">
+        <h3>Some bad jokes</h3>
+        <p class="fun-intro">Here are a couple of quotes I suggested to the JPE:</p>
+
+        <div class="joke">
+          <div class="joke-title">Convexity of a State-Dependent Utility Function in <em>JPE</em> 123:5 (Oct 2015)</div>
+          <blockquote>&laquo;Do. Or do not. There is no try.&raquo; (Yoda)</blockquote>
+          <div class="source">[Gary Kurtz, Leigh Brackett, Lawrence Kasdan, Irvin Kershner, George Lucas, Mark Hamill, Harrison Ford, et al., <em>Star Wars, Episode V, The Empire Strikes Back</em> (Los Angeles: Twentieth Century Fox, 2004)]</div>
+        </div>
+
+        <div class="joke">
+          <div class="joke-title">News Shock and Granger Causality in <em>JPE</em> 124:6 (Dec 2016)</div>
+          <blockquote>Dr. Emmett Brown: [reads the &laquo;Save the Clock Tower&raquo; flyer and reacts with hope] &laquo;This is it! This is the answer. It says here that a bolt of lightning is going to strike the clock tower at precisely 10:04 p.m. next Saturday night! If&hellip; If we could somehow harness this lightning&hellip; channel it into the flux capacitor&hellip; it just might work. Next Saturday night, we're sending you back to the future!&raquo;</blockquote>
+          <div class="source">[Robert Zemeckis and Bob Gale, <em>Back to the Future</em> (Universal Studios, 1985)]</div>
+        </div>
+
+        <div class="joke">
+          <div class="joke-title">A Brief Lesson in Public Finance in <em>JPE</em> 126:5 (Oct 2018)</div>
+          <p class="joke-intro">In <em>The Labyrinth of Solitude</em>, Octavio Paz, a Mexican Nobel laureate, explains public expenditure practices in the worldly and otherwise:</p>
+          <blockquote>&ldquo;I remember that years ago I asked the municipal president of a village close to Mitla: &lsquo;How much does the Municipality's income come from contributions?&rsquo;<br>
+          &lsquo;About three thousand pesos a year [around 12,000 dollars in 2016]. We are very poor. That is why the Governor and the Federation help us to complete our expenses every year.&rsquo;<br>
+          &lsquo;And how do you use those three thousand pesos?&rsquo;<br>
+          &lsquo;Well, almost everything at parties, sir. Small, as you can see, the town has two Holy Patrons.&rsquo;&rdquo;</blockquote>
+          <div class="source">[Octavio Paz, <em>El laberinto de la soledad</em> (M&eacute;xico: Fondo de Cultura Econ&oacute;mica, 1959)]</div>
+        </div>
+
+        <div class="joke">
+          <div class="joke-title">A Universal Crisis of Economic Illiteracy in <em>JPE</em> 128:6 (Jun 2020)</div>
+          <p class="joke-intro">In <em>Avengers: Infinity War</em>, Thanos is convinced that the universe is overpopulated, which causes anguish to its denizens. Instead of adjusting prices, Thanos proposes to adjust demanded quantities by erasing half of the population in the universe:</p>
+          <blockquote>Gamora: I was a child when you took me.<br>
+          Thanos: I saved you.<br>
+          Gamora: No. We were happy on my home planet.<br>
+          Thanos: You were going to bed hungry, scrounging for scraps. Your planet was on the brink of collapse. I'm the one who stopped that. You know what's happened since then? The children born have known nothing but full bellies and clear skies. It's a paradise.<br>
+          Gamora: Because you murdered half the planet.<br>
+          Thanos: A small price to pay for salvation.<br>
+          Gamora: You're insane.<br>
+          Thanos: Little one, it's a simple calculus. This universe is finite, its resources, finite. If life is left unchecked, life will cease to exist. It needs correcting.<br>
+          Gamora: You don't know that!<br>
+          Thanos: I'm the only one who knows that. At least, I'm the only one with the will to act on it.</blockquote>
+          <p class="joke-punchline">If only Thanos knew basic economics.</p>
+          <div class="source">[Anthony Russo, Joe Russo, et al, <em>Avengers: Infinity War</em> (Marvel Studios, 2018)]</div>
+        </div>
+      </div>
+
+      <!-- Economist letter -->
+      <div class="fun-section">
+        <h3>Letter to The Economist</h3>
+        <div class="about-content">
+          <p>
+            And here is an embarrassing letter to the editor of <em>The Economist</em> in response to &laquo;<a href="http://www.economist.com/news/leaders/21719799-it-time-recognise-value-bit-hassle-case-efficiency-tax" target="_blank">Friction lovers</a>&raquo;.
+            You can find it <a href="http://www.economist.com/news/letters/21720594-yemen-sex-studies-india-wales-singapore-banks-poland-brains-aprils-fool-letters" target="_blank">here</a> or in the print edition of Apr 12th 2017.
+          </p>
+          <blockquote>
+            <strong>Our foolish tax on efficiency</strong><br>
+            After looking for papers on &laquo;facile externalities&raquo; in the <em>Scandinavian Journal of Economics</em>, I got suspicious of the inclusion of a middle initial in the author's name, Danilov P. Rossi, in &laquo;Friction lovers&raquo; (April 1st). You seldom do that. I solved the anagram. But am I still a <em>poisson d'avril</em>?
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- Spotify -->
+      <div class="fun-section">
+        <h3>Running Regressions Playlist</h3>
+        <div class="about-content">
+          <p>
+            And here is a <a href="https://open.spotify.com/playlist/7haoSF0827CncbRfwKMBj4?si=34d2c876385b4a9c" target="_blank">playlist</a> that I hear when I'm running regressions. Be advised that it may reflect a rather cynical view of the less glamorous side of empirical work.
+          </p>
+        </div>
+      </div>
+
+      <!-- Photo credit & punchline -->
+      <div class="fun-section">
+        <div class="about-content">
+          <p>The profile picture is courtesy of Chuck Needy, a friend at the FCC.</p>
+          <p>Finally, the punchline: I'm a lifelong fan of Cruz Azul FC, which makes me quite resistant to frustration; a must-have in academia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      <a href="mailto:jtudon@itam.mx">jtudon@itam.mx</a> &middot;
+      <a href="https://www.dropbox.com/scl/fi/91c6y0rz20531xjnlt5kp/CV_JoseTudon.pdf?rlkey=doyjut5jyf7ixormi2hmzsjv6&dl=0" target="_blank">CV</a> &middot;
+      Jose Tudon
+    </p>
+  </footer>
+
+  <!-- Minimal JS -->
+  <script>
+    // Navbar scroll effect
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const top = section.offsetTop - 100;
+        if (window.scrollY >= top) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
