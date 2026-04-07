@@ -11,13 +11,42 @@
 </head>
 <body>
   <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;">
-    <div>
-      <h1 style="font-family:'Lora',Georgia,serif;font-size:3rem;font-weight:400;margin-bottom:0.5rem;">404</h1>
-      <p style="font-family:'Lora',Georgia,serif;font-size:1.2rem;color:#1c2b22;margin-bottom:1.5rem;">Market failure.</p>
-      <p style="color:#607a6b;margin-bottom:0.5rem;max-width:360px;">This page could not be supplied. Perhaps the price was too low, or demand was simply zero.</p>
-      <p style="color:#607a6b;font-size:0.85rem;margin-bottom:2rem;font-style:italic;">No equilibrium exists in this subspace of the URL set.</p>
+    <div style="max-width:400px;">
+      <h1 id="error-code" style="font-family:'Lora',Georgia,serif;font-size:3rem;font-weight:400;margin-bottom:0.5rem;cursor:pointer;user-select:none;transition:transform 0.15s ease;" title="Click me">404</h1>
+      <p id="error-title" style="font-family:'Lora',Georgia,serif;font-size:1.2rem;color:#1c2b22;margin-bottom:1.5rem;">Market failure.</p>
+      <p id="error-desc" style="color:#607a6b;margin-bottom:0.5rem;">This page could not be supplied. Perhaps the price was too low, or demand was simply zero.</p>
+      <p id="error-footnote" style="color:#607a6b;font-size:0.85rem;margin-bottom:2rem;font-style:italic;">No equilibrium exists in this subspace of the URL set.</p>
       <a href="/" style="color:#1a6b4a;border-bottom:1px solid #d2ddd6;">Back to equilibrium &rarr;</a>
     </div>
   </div>
+
+  <script>
+    const errors = [
+      { code: '404', title: 'Market failure.', desc: 'This page could not be supplied. Perhaps the price was too low, or demand was simply zero.', note: 'No equilibrium exists in this subspace of the URL set.' },
+      { code: '503', title: 'Service unavailable.', desc: 'The invisible hand is on break.', note: 'Expected back when market conditions improve.' },
+      { code: '429', title: 'Too many requests.', desc: 'Inelastic supply. This server cannot produce more pages regardless of how hard you click.', note: 'Consider substituting to the homepage.' },
+      { code: '402', title: 'Payment required.', desc: 'This page operates on a pay-what-you-want basis. You paid nothing. Fair enough.', note: 'Consumer welfare always increases with pay-what-you-want.' },
+      { code: '408', title: 'Request timeout.', desc: 'Your request took longer than a tenure decision.', note: 'And that is saying something.' },
+      { code: '418', title: "I'm a teapot.", desc: "This server refuses to brew coffee because it is, permanently, a teapot.", note: 'RFC 2324. Look it up. Economists love a good protocol.' },
+      { code: '451', title: 'Unavailable for legal reasons.', desc: 'This page was removed after Thanos argued it violated the universe\'s resource constraints.', note: 'If only he knew basic economics.' },
+      { code: '200', title: 'OK. Just kidding.', desc: 'This is still an error page. But for a moment, you felt the welfare gains of hope.', note: 'Sunk cost. Move on.' }
+    ];
+
+    let i = 0;
+    const code = document.getElementById('error-code');
+    const title = document.getElementById('error-title');
+    const desc = document.getElementById('error-desc');
+    const note = document.getElementById('error-footnote');
+
+    code.addEventListener('click', () => {
+      code.style.transform = 'scale(1.15)';
+      setTimeout(() => code.style.transform = 'scale(1)', 150);
+      i = (i + 1) % errors.length;
+      code.textContent = errors[i].code;
+      title.textContent = errors[i].title;
+      desc.textContent = errors[i].desc;
+      note.textContent = errors[i].note;
+    });
+  </script>
 </body>
 </html>
