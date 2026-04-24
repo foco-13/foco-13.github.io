@@ -2,7 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jtudon.com/</loc>
-    <lastmod>2026-04-07</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://jtudon.com/blog/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jtudon.com/blog/neutralidad-de-red/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jtudon.com/blog/cirugia-de-cataratas/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://jtudon.com/blog/efectos-de-red-videojuegos/</loc>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Divulgación — Jose Tudon</title>
+  <meta name="description" content="Divulgación científica en español. Economía digital, plataformas, salud y competencia, explicadas para público general.">
+  <meta name="author" content="Jose Tudon">
+  <link rel="canonical" href="https://jtudon.com/blog/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Divulgación — Jose Tudon">
+  <meta property="og:description" content="Divulgación científica en español. Economía digital, plataformas, salud y competencia, explicadas para público general.">
+  <meta property="og:url" content="https://jtudon.com/blog/">
+  <meta property="og:image" content="https://jtudon.com/images/photo.jpg">
+  <meta property="og:locale" content="es_MX">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Divulgación — Jose Tudon">
+  <meta name="twitter:description" content="Divulgación científica en español.">
+  <meta name="twitter:image" content="https://jtudon.com/images/photo.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JT</text></svg>">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-name">Jose Tudon</a>
+      <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/#research">Research</a></li>
+        <li><a href="/#teaching">Teaching</a></li>
+        <li><a href="/blog/" class="active">Divulgación</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="https://www.dropbox.com/scl/fi/91c6y0rz20531xjnlt5kp/CV_JoseTudon.pdf?rlkey=doyjut5jyf7ixormi2hmzsjv6&dl=0" target="_blank">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="blog-page">
+    <header class="blog-header">
+      <div class="kicker">Divulgación</div>
+      <h1>Economía aplicada, en español y sin fórmulas</h1>
+      <p class="lede">
+        Aquí traduzco mi investigación académica a lenguaje accesible.
+        Plataformas digitales, salud, mercados y competencia.
+        Las entradas resumen papers míos; para más detalle, la sección de <a href="/#research">Research</a>.
+      </p>
+    </header>
+
+    <section class="blog-list">
+
+      <article class="blog-entry">
+        <h2><a href="/blog/efectos-de-red-videojuegos/">¿Por qué todos tus amigos juegan en la misma plataforma que tú?</a></h2>
+        <p class="excerpt">
+          Los efectos de red explican por qué WhatsApp dominó México y por qué es tan difícil competir contra plataformas establecidas.
+          Usé datos de Steam para medir cuánto pesan. El resultado cambia cómo deberíamos pensar la competencia digital.
+        </p>
+      </article>
+
+      <article class="blog-entry">
+        <h2><a href="/blog/cirugia-de-cataratas/">¿Por qué la gente pospone una cirugía que podría devolverle la vista?</a></h2>
+        <p class="excerpt">
+          Las cataratas son la principal causa de ceguera reversible, y la cirugía es rutinaria.
+          Aun así, millones no se operan. Estudiamos por qué, con datos de un gran proveedor en la Ciudad de México, y qué política de salud funciona mejor.
+        </p>
+      </article>
+
+      <article class="blog-entry">
+        <h2><a href="/blog/neutralidad-de-red/">¿Qué pasaría si Netflix pudiera pagar para que tu video cargue más rápido?</a></h2>
+        <p class="excerpt">
+          La neutralidad de la red suena a un principio moral. En realidad, es una decisión económica con ganadores y perdedores.
+          Usé datos de Twitch.tv para estimar los costos reales, y encontré algunas sorpresas.
+        </p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="mailto:jtudon@itam.mx">jtudon@itam.mx</a> &middot;
+      <a href="https://www.dropbox.com/scl/fi/91c6y0rz20531xjnlt5kp/CV_JoseTudon.pdf?rlkey=doyjut5jyf7ixormi2hmzsjv6&dl=0" target="_blank">CV</a> &middot;
+      Jose Tudon
+    </p>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>

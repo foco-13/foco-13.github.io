@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>¿Por qué todos tus amigos juegan en la misma plataforma que tú? — Jose Tudon</title>
+  <meta name="description" content="Qué son los efectos de red, cómo los medí con datos de Steam, y qué implican para la competencia entre plataformas digitales.">
+  <meta name="author" content="Jose Tudon">
+  <link rel="canonical" href="https://jtudon.com/blog/efectos-de-red-videojuegos/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="¿Por qué todos tus amigos juegan en la misma plataforma que tú?">
+  <meta property="og:description" content="Efectos de red explicados con datos de Steam. Implicaciones para mercados digitales en México.">
+  <meta property="og:url" content="https://jtudon.com/blog/efectos-de-red-videojuegos/">
+  <meta property="og:image" content="https://jtudon.com/images/photo.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="article:author" content="Jose Tudon">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="¿Por qué todos tus amigos juegan en la misma plataforma que tú?">
+  <meta name="twitter:description" content="Efectos de red explicados con datos de Steam.">
+  <meta name="twitter:image" content="https://jtudon.com/images/photo.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "¿Por qué todos tus amigos juegan en la misma plataforma que tú?",
+    "author": { "@type": "Person", "name": "Jose Tudon", "url": "https://jtudon.com/" },
+    "inLanguage": "es",
+    "mainEntityOfPage": "https://jtudon.com/blog/efectos-de-red-videojuegos/",
+    "publisher": { "@type": "Person", "name": "Jose Tudon" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>JT</text></svg>">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-name">Jose Tudon</a>
+      <button class="menu-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/#research">Research</a></li>
+        <li><a href="/#teaching">Teaching</a></li>
+        <li><a href="/blog/" class="active">Divulgación</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="https://www.dropbox.com/scl/fi/91c6y0rz20531xjnlt5kp/CV_JoseTudon.pdf?rlkey=doyjut5jyf7ixormi2hmzsjv6&dl=0" target="_blank">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <article class="post">
+    <a href="/blog/" class="back-link">← Divulgación</a>
+
+    <h1>¿Por qué todos tus amigos juegan en la misma plataforma que tú?</h1>
+
+    <div class="post-body">
+      <p>
+        Si tus amigos juegan en Steam, seguramente tú también.
+        Si juegan en PlayStation, te será difícil jugar con ellos sin una consola.
+        Este fenómeno tiene un nombre en economía: efecto de red.
+        El valor de un producto no depende solo de sus características, sino de cuántas personas más lo usan.
+      </p>
+
+      <p>
+        Los efectos de red explican por qué hay tan pocas redes sociales grandes, por qué WhatsApp dominó México casi sin publicidad, y por qué es tan difícil competir contra plataformas establecidas.
+        La gente no elige por calidad; elige por dónde están sus contactos.
+      </p>
+
+      <p>
+        Medir este efecto es difícil.
+        Idealmente, quisiera observar a un mismo consumidor con y sin amigos usando una plataforma.
+        Pero los amigos no aparecen y desaparecen al azar.
+        Correlación no es causalidad: si veo que alguien compra un juego cuando sus amigos lo compran, podría ser imitación, pero también podría ser que todos vieron el mismo anuncio.
+      </p>
+
+      <p>
+        Para resolverlo, usé datos de Steam, la mayor tienda digital de videojuegos del mundo.
+        Steam muestra a cada usuario qué juegan sus amigos.
+        Comparé cómo responde la misma persona ante bajas de precio cuando tiene amigos jugando ese juego, frente a cuando no los tiene.
+        La persona es la misma; lo único que cambia es el entorno social.
+      </p>
+
+      <p>
+        El resultado: un aumento del 1% en el consumo de los amigos eleva el consumo propio en 0.3%.
+        No es enorme por persona, pero se multiplica.
+        Si una empresa logra que los primeros compradores inviten a sus amigos, cada compra genera otras.
+      </p>
+
+      <p>
+        Esto tiene implicaciones importantes.
+        Primero, explica por qué las empresas pagan fortunas a «influencers» y streamers: no venden un producto, siembran una red.
+        Segundo, justifica que las plataformas quieran integrar sus redes sociales.
+        Y las fusiones entre plataformas aumentan el tamaño efectivo de cada red, lo que crea valor para los usuarios que ya estaban adentro.
+      </p>
+
+      <p>
+        También hay un lado problemático.
+        Los efectos de red construyen monopolios naturales.
+        En el paper muestro que ignorar estos efectos lleva a errores graves cuando se evalúa una fusión.
+        Un regulador podría aprobar una unión pensando que solo reduce competencia, sin notar que también amplifica el poder del ganador.
+      </p>
+
+      <p>
+        Para México, esto es relevante.
+        Los mercados digitales apenas empiezan a regularse.
+        La Cofece necesita herramientas para medir efectos de red en nuestro contexto: WhatsApp, Mercado Libre, Spotify, Uber.
+        La competencia digital no se parece a la de un mercado tradicional.
+        Medirla requiere métodos distintos.
+      </p>
+    </div>
+
+    <div class="post-footer">
+      Este artículo está basado en investigación académica publicada.
+      Para más detalles, visita la sección de <a href="/#research">Research</a>.
+      Paper: <a href="https://www.dropbox.com/s/oydmg6hoel7z0ps/Tudon%202022%20QME.pdf?raw=1" target="_blank">Distilling Network Effects from Steam</a>, <em>Quantitative Marketing and Economics</em>, 2022.
+    </div>
+  </article>
+
+  <footer>
+    <p>
+      <a href="mailto:jtudon@itam.mx">jtudon@itam.mx</a> &middot;
+      <a href="https://www.dropbox.com/scl/fi/91c6y0rz20531xjnlt5kp/CV_JoseTudon.pdf?rlkey=doyjut5jyf7ixormi2hmzsjv6&dl=0" target="_blank">CV</a> &middot;
+      Jose Tudon
+    </p>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
